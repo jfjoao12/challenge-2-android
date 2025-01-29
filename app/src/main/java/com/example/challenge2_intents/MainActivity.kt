@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initializeViews() {
-        val txtInput = findViewById<EditText>(R.id.txt_input).text.toString()
-        val filteredInput = operations.filterInput(txtInput)
+        val txtInput = findViewById<EditText>(R.id.txt_input)
+        val filteredInput = operations.filterInput(txtInput.text.toString())
         val btnPangram = findViewById<Button>(R.id.btn_pangram)
 
 
