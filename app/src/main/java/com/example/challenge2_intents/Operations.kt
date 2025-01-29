@@ -25,4 +25,10 @@ class Operations {
         }
         return flag
     }
+
+    fun filterInput(str: String): String {
+        val filtered = str.lowercase().filter { it.isLetter() }
+        return filtered
+
+    }
 }
